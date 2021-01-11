@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Textarea转HTML</title> 
+</head>
+<body>
+
+	<textarea id="aaa" rows="10" cols="30">
+	我是一个文本框。
+	</textarea> <br/>
+	<button onclick="submit()">提交</button><br/>
+	<div id="bbb"></div>
+</body>
+    
+    <script src="./TextareaUtil.js"></script>
+	<script>	
+		function submit(){
+			document.getElementById("bbb").innerHTML = textarea2HtmlById("aaa");
+		}
+	</script>
+</html>
